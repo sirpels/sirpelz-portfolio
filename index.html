@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Oluwapelumi | Frontend Developer</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Merriweather:wght@400;700&display=swap" rel="stylesheet"/>
+
+  <!-- Your CSS — always load AFTER Tailwind -->
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- ✅ NO script tag here — script.js goes at the BOTTOM of body -->
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+
+      <!-- Logo -->
+      <a href="#home" class="logo">SIRPELZBUILDS</a>
+
+      <!-- Desktop Nav -->
+      <ul class="nav-links">
+        <li><a href="#home"       class="nav-link">Home</a></li>
+        <li><a href="#about"      class="nav-link">About</a></li>
+        <li><a href="#skills"     class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects"   class="nav-link">Projects</a></li>
+        <li><a href="#contact"    class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Theme toggle -->
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+      </button>
+
+      <!-- Hamburger (mobile) -->
+      <button id="hamburger" aria-label="Toggle menu">
+        <i class="fas fa-bars" id="hamburger-icon"></i>
+      </button>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu-closed">
+      <ul class="mobile-links">
+        <li><a href="#home"       class="nav-link mobile-nav-link">Home</a></li>
+        <li><a href="#about"      class="nav-link mobile-nav-link">About</a></li>
+        <li><a href="#skills"     class="nav-link mobile-nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link mobile-nav-link">Experience</a></li>
+        <li><a href="#projects"   class="nav-link mobile-nav-link">Projects</a></li>
+        <li><a href="#contact"    class="nav-link mobile-nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <section id="home" class="hero">
+
+    <div class="hero-clock">
+      <div class="clock">
+        <i class="fas fa-clock"></i>
+        <span id="time">--:--</span>
+      </div>
+    </div>
+
+    <!-- Profile Image -->
+    <div class="profile-ring">
+      <img
+        src="images/locked in.jpeg"
+        alt="Oluwapelumi Solomon"
+        onerror="this.parentElement.innerHTML='<span style=\'font-size:4rem\'>👤</span>'"
+      />
+    </div>
+
+    <p class="hero-greeting">Hi there 👋, I'm</p>
+
+    <h1 class="hero-name">Oluwapelumi</h1>
+
+    <h2 class="hero-sub">
+      <span id="typed" class="typing-cursor"></span>
+    </h2>
+
+    <p class="hero-bio">
+      I build <span class="gold">fast, beautiful websites</span> and
+      <span class="gold">high-converting Shopify stores</span> that make
+      your brand look like it means business — because it does.
+    </p>
+
+    <div class="hero-btns">
+      <a href="#projects" class="btn-gold">See My Work</a>
+      <a href="#contact"  class="btn-outline">Hire Me</a>
+    </div>
+
+    <div class="hero-socials">
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener" class="social-icon" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://github.com/yourusername" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://wa.me/2349000000000" target="_blank" rel="noopener" class="social-icon" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Scroll down</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       ABOUT
+  ══════════════════════════════════════ -->
+  <section id="about" class="section fade-in">
+    <p class="section-label">Who I Am</p>
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about-grid">
+
+      <div class="about-text">
+        <p>
+          I'm a <strong>Frontend Developer</strong> and
+          <strong>Shopify specialist</strong> based in Nigeria,
+          passionate about turning ideas into polished digital products.
+        </p>
+        <p>
+          I care deeply about clean code, thoughtful design, and results that
+          actually <em class="gold">move the needle</em> for clients.
+          Whether you need a sleek landing page, a full Shopify store, or a
+          custom web experience — I bring both the technical skill and the
+          creative eye to make it happen.
+        </p>
+        <p>
+          I'm always learning, always building, and always delivering.
+          Right now I'm expanding into <strong>AutoCAD</strong> and
+          engineering technology — because great builders never stop growing.
+        </p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <p class="stat-num">2+</p>
+          <p class="stat-label">Projects Completed</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-num">100%</p>
+          <p class="stat-label">Client Satisfaction</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-num">∞</p>
+          <p class="stat-label">Ideas to Build</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-num">24/7</p>
+          <p class="stat-label">Dedicated to Craft</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       SKILLS
+  ══════════════════════════════════════ -->
+  <section id="skills" class="max-w-4xl mx-auto px-6 py-16 fade-in">
+    <div class="text-center mb-3">
+      <span class="text-yellow-400 text-xs tracking-widest uppercase font-bold">What I Bring</span>
+    </div>
+    <h2 class="text-3xl font-bold text-center mb-10">Skills & Services</h2>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6 card-hover transition duration-300 text-center">
+        <div class="text-3xl mb-3">🎨</div>
+        <h3 class="text-yellow-400 font-bold text-lg mb-3">Frontend Dev</h3>
+        <div class="flex flex-wrap gap-2 justify-center">
+          <span class="skill-badge px-3 py-1 text-xs border border-yellow-400/50 rounded-full text-yellow-300 transition cursor-default">HTML</span>
+          <span class="skill-badge px-3 py-1 text-xs border border-yellow-400/50 rounded-full text-yellow-300 transition cursor-default">CSS</span>
+          <span class="skill-badge px-3 py-1 text-xs border border-yellow-400/50 rounded-full text-yellow-300 transition cursor-default">JavaScript</span>
+          <span class="skill-badge px-3 py-1 text-xs border border-yellow-400/50 rounded-full text-yellow-300 transition cursor-default">Tailwind CSS</span>
+          <span class="skill-badge px-3 py-1 text-xs border border-yellow-400/50 rounded-full text-yellow-300 transition cursor-default">Responsive Design</span>
+        </div>
+      </div>
+
+      <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6 card-hover transition duration-300 text-center">
+        <div class="text-3xl mb-3">🛒</div>
+        <h3 class="text-yellow-400 font-bold text-lg mb-3">E-Commerce</h3>
+        <div class="flex flex-wrap gap-2 justify-center">
+          <span class="skill-badge px-3 py-1 text-xs border border-yellow-400/50 rounded-full text-yellow-300 transition cursor-default">Shopify</span>
+          <span class="skill-badge px-3 py-1 text-xs border border-yellow-400/50 rounded-full text-yellow-300 transition cursor-default">Dropshipping</span>
+          <span class="skill-badge px-3 py-1 text-xs border border-yellow-400/50 rounded-full text-yellow-300 transition cursor-default">Store Setup</span>
+          <span class="skill-badge px-3 py-1 text-xs border border-yellow-400/50 rounded-full text-yellow-300 transition cursor-default">Product Pages</span>
+        </div>
+      </div>
+
+      <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6 card-hover transition duration-300 text-center">
+        <div class="text-3xl mb-3">⚡</div>
+        <h3 class="text-yellow-400 font-bold text-lg mb-3">What I Deliver</h3>
+        <div class="flex flex-wrap gap-2 justify-center">
+          <span class="skill-badge px-3 py-1 text-xs border border-yellow-400/50 rounded-full text-yellow-300 transition cursor-default">Clean Code</span>
+          <span class="skill-badge px-3 py-1 text-xs border border-yellow-400/50 rounded-full text-yellow-300 transition cursor-default">Fast Turnaround</span>
+          <span class="skill-badge px-3 py-1 text-xs border border-yellow-400/50 rounded-full text-yellow-300 transition cursor-default">Mobile-First</span>
+          <span class="skill-badge px-3 py-1 text-xs border border-yellow-400/50 rounded-full text-yellow-300 transition cursor-default">Attention to Detail</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       EXPERIENCE
+  ══════════════════════════════════════ -->
+  <section id="experience" class="section fade-in">
+    <p class="section-label">Journey</p>
+    <h2 class="section-title">Experience</h2>
+
+    <div class="timeline">
+
+      <div class="exp-item">
+        <div class="exp-dot"></div>
+        <div class="exp-content">
+          <div class="exp-header">
+            <h3>Frontend Developer</h3>
+            <span class="exp-date">2024 – Present</span>
+          </div>
+          <p class="exp-role">Self-Employed / Freelance</p>
+          <p class="exp-desc">
+            Building responsive, pixel-perfect websites using HTML, CSS, Tailwind CSS, and JavaScript.
+            Delivering custom projects for clients including portfolio sites, landing pages, and branded web layouts.
+          </p>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-dot"></div>
+        <div class="exp-content">
+          <div class="exp-header">
+            <h3>Shopify Store Developer</h3>
+            <span class="exp-date">2024 – Present</span>
+          </div>
+          <p class="exp-role">Freelance E-Commerce</p>
+          <p class="exp-desc">
+            Setting up fully operational Shopify stores from scratch — theme customisation, product page design,
+            payment integration, and store optimisation for conversion.
+          </p>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-dot"></div>
+        <div class="exp-content">
+          <div class="exp-header">
+            <h3>E-Commerce & Dropshipping Specialist</h3>
+            <span class="exp-date">2023 – Present</span>
+          </div>
+          <p class="exp-role">Independent</p>
+          <p class="exp-desc">
+            Researching winning products, building supplier relationships, and launching dropshipping businesses.
+            Helping brands grow online with smart store strategies and lean operational setups.
+          </p>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-dot exp-dot-muted"></div>
+        <div class="exp-content">
+          <div class="exp-header">
+            <h3>AutoCAD & Engineering Tech</h3>
+            <span class="exp-date">2025 – Present</span>
+          </div>
+          <p class="exp-role">Currently Learning</p>
+          <p class="exp-desc">
+            Expanding skillset into technical design and engineering technology. Learning AutoCAD for
+            precision drafting — bridging the creative and technical worlds.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       PROJECTS
+  ══════════════════════════════════════ -->
+  <section id="projects" class="section fade-in">
+    <p class="section-label">Portfolio</p>
+    <h2 class="section-title">Projects I've Built</h2>
+
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-icon">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <h3>Certificate Layout Project</h3>
+        </div>
+        <p class="project-desc">
+          Designed and built a polished, print-ready certificate layout using pure HTML & CSS.
+          Focused on precision typography, spacing, and a professional aesthetic.
+        </p>
+        <div class="tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">Typography</span>
+        </div>
+        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3>ControlHQ Website</h3>
+        </div>
+        <p class="project-desc">
+          Built a fully responsive multi-section frontend layout for a productivity brand.
+          Implemented modern UI patterns, mobile-first design, and smooth hover states.
+        </p>
+        <div class="tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">Responsive</span>
+        </div>
+        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="project-card project-ghost">
+        <i class="fas fa-hammer"></i>
+        <p>More Projects Coming Soon</p>
+        <span>Always building. Stay tuned 🔨</span>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!--CONTACT-->
+  <section id="contact" class="section fade-in contact-center">
+    <p class="section-label">Let's Talk</p>
+    <h2 class="section-title">Got a Project in Mind?</h2>
+    <p class="contact-bio">
+      Whether it's a new Shopify store, a website revamp, or just an idea you want
+      to bring to life — I'm all ears. Let's build something great together.
+    </p>
+
+    <a href="mailto:your@email.com" class="btn-gold contact-btn">
+      <i class="fas fa-paper-plane"></i> Send Me a Message
+    </a>
+
+    <div class="contact-socials">
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener" class="social-icon" aria-label="Twitter/X">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://github.com/yourusername" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://wa.me/2349000000000" target="_blank" rel="noopener" class="social-icon" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+  </section>
+
+
+  <!--FOOTER-->
+  <footer>
+    <p class="footer-logo">SIRPELZBUILDS</p>
+    <p>© 2026 Oluwapelumi Solomon · Built with Red eyes and clean code.</p>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+  <script src="script.js"></script>
+
+</body>
+</html>
