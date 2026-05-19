@@ -103,17 +103,6 @@ html, body {
 .nav-link:hover,
 .nav-link.active { color: #FFD700; }
 
-/* Clock */
-.clock {
-  display: flex;
-  align-items: center;
-  gap: 0.45rem;
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: #d1d5db;
-}
-.clock i { color: #FFD700; }
-
 /* Hamburger */
 #hamburger {
   display: none;
@@ -202,32 +191,6 @@ html, body {
   text-align: center;
   padding: 7rem 1.5rem 4rem;
   background-color: #000000;
-}
-
-.hero-clock {
-  position: absolute;
-  top: 1.4rem;
-  right: 1.4rem;
-  z-index: 5;
-}
-
-.hero .clock {
-  background: rgba(255, 255, 255, 0.08);
-  padding: 0.9rem 1.05rem;
-  border-radius: 9999px;
-  font-size: 0.875rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  color: #f8fafc;
-}
-
-.hero .clock i {
-  color: #FFD700;
-}
-
-.light-theme .hero .clock {
-  background: rgba(0, 0, 0, 0.06);
-  color: var(--text);
 }
 
 /* Profile image */
@@ -807,8 +770,8 @@ footer {
    RESPONSIVE
    ════════════════════════════════════════════ */
 @media (max-width: 768px) {
-  /* Show hamburger, hide desktop nav + clock */
-  .nav-links, .clock { display: none; }
+  /* Show hamburger and hide desktop nav */
+  .nav-links { display: none; }
   #hamburger { display: block; }
 
   /* Stack about grid */
@@ -882,7 +845,6 @@ footer {
 
 .light-theme .logo,
 .light-theme .nav-link,
-.light-theme .clock,
 .light-theme #hamburger,
 .light-theme .mobile-nav-link {
   color: var(--text);

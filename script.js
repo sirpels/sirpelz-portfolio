@@ -3,37 +3,17 @@
    Author: Oluwapelumi Solomon
    
    Features:
-   1. Live Clock
-   2. Typing Animation
-   3. Scroll Fade-In
-   4. Skill Bar Animation
-   5. Active Nav Link on Scroll
-   6. Navbar Shrink on Scroll
-   7. Hamburger Mobile Menu
-   8. Back to Top Button
+   1. Typing Animation
+   2. Scroll Fade-In
+   3. Skill Bar Animation
+   4. Active Nav Link on Scroll
+   5. Navbar Shrink on Scroll
+   6. Hamburger Mobile Menu
+   7. Back to Top Button
    ════════════════════════════════════════════ */
 
 
-/* ──────────────────────────────────────────
-   1. LIVE CLOCK
-   Updates the time display in the navbar
-   every second using setInterval.
-   
-   CONCEPTS USED: function, Date object,
-   setInterval, getElementById, textContent
-   ────────────────────────────────────────── */
-function updateTime() {
-  const now = new Date();  // creates a Date object with current date/time
 
-  // toLocaleTimeString formats it nicely: "09:45 AM"
-  document.getElementById("time").textContent = now.toLocaleTimeString([], {
-    hour:   '2-digit',
-    minute: '2-digit'
-  });
-}
-
-setInterval(updateTime, 1000); // runs updateTime every 1000 milliseconds (1 second)
-updateTime();                   // also run immediately so there's no 1s delay on load
 
 
 /* ──────────────────────────────────────────
@@ -78,7 +58,7 @@ function type() {
   // --- Decide what happens next ---
 
   if (!isDeleting && charIndex === current.length) {
-    // We just finished typing the full string
+    //  just finished typing the full string
     // Wait 1.5s then start deleting
     isDeleting = true;
     setTimeout(type, 1500);
