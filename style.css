@@ -589,6 +589,8 @@ html, body {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  color: inherit;
+  text-decoration: none;
   transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
 }
 .project-card:hover {
@@ -614,6 +616,18 @@ html, body {
   justify-content: center;
   font-size: 0.9rem;
   flex-shrink: 0;
+}
+
+.project-logo {
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.project-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 2px;
 }
 
 .project-top h3 {
@@ -657,6 +671,18 @@ html, body {
 .project-link:hover {
   gap: 10px;
   color: #ffe84d;
+}
+
+.project-card:hover .project-link {
+  gap: 10px;
+  color: #ffe84d;
+}
+
+.project-link-muted,
+.project-link-muted:hover {
+  color: #6b7280;
+  gap: 6px;
+  cursor: default;
 }
 
 /* Coming soon ghost card */
